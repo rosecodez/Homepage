@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#sections {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+}
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#profile-picture {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.github-picture, .link, #footer-images *, #phone-image, #email-image {
+    height: 35px;
+}
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#footer-right :first-child {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+}
