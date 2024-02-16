@@ -14,11 +14,18 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 20px;
+}
+#header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 #profile-picture {
     height: 300px;
     width: 100%;
     object-fit: contain;
+    object-position: right;
 }
 #content {
     display: flex;
@@ -40,8 +47,25 @@
     box-shadow: 0px 2px 6px 2px rgb(169 169 169 / 58%);
     padding-bottom: 100px;
 }
+#projects-container > :nth-child(1) > :nth-child(1) {
+    background-color: lightgreen;
+}
+#projects-container > :nth-child(2) > :nth-child(1) {
+    background-color: #e5e375bd;
+}
+#projects-container > :nth-child(3) > :nth-child(1) {
+    background-color: #a034ffa3;
+}
+#projects-container > :nth-child(4) > :nth-child(1) {
+    background-color: lightblue;
+}
+#projects-container > :nth-child(5) > :nth-child(1) {
+    background-color: lightcoral;
+}
+#projects-container > :nth-child(6) > :nth-child(1) {
+    background-color: lightseagreen;
+}
 .projects-upper {
-    background-color: #46bd46;
     height: 112px;
     display: flex;
     justify-content: center;
@@ -49,13 +73,21 @@
 }
 .projects-lower {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.projects :last-child {
     padding-left: 20px;
     padding-right: 20px;
+    flex-direction: column;
 }
+.project-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects-lower  :nth-child(2) {
+    display: flex;
+    gap: 20px;
+}
+
 .github-picture, .link, #footer-images *, #phone-image, #email-image {
     height: 35px;
 }
