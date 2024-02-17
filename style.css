@@ -9,29 +9,28 @@
     padding-top: 50px;
     padding-bottom: 50px;
     align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 #header {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
+    max-width: 1380px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #header-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-#profile-picture {
-    height: 300px;
-    width: 100%;
-    object-fit: contain;
-    object-position: right;
-}
 #content {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    max-width: 1500px;
 }
 #projects-container{
     display: flex;
@@ -46,6 +45,7 @@
     gap: 10px;
     box-shadow: 0px 2px 6px 2px rgb(169 169 169 / 58%);
     padding-bottom: 100px;
+    min-width: 300px;
 }
 #projects-container > :nth-child(1) > :nth-child(1) {
     background-color: lightgreen;
@@ -95,16 +95,19 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #footer-left {
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
-#footer-right :first-child {
+#footer-right :first-child, #header-left :first-child {
     height: 300px;
     width: 100%;
     object-fit: contain;
+    min-width: 310px;
 }
 #phone, #email, #footer-images {
     display: flex;
